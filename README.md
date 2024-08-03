@@ -1754,7 +1754,7 @@ The join produces:
 
 We join on foreign key = primary key:
 
-**EMPLOYEE AS e_emp JOIN EMPLOYEE AS e_rep ON e_rep.emp_id = e_emp.emp_id**
+**EMPLOYEE AS e_emp JOIN EMPLOYEE AS e_rep ON e_rep.emp_id = e_emp.rep_id**
 | e_emp.emp_id | e_emp.name    | **e_emp.rep_id** | **e_rep.emp_id** | e_rep.name    | e_rep.rep_id |
 | ------------ | ------------- | ---------------- | ---------------- | ------------- | ------------ |
 | <s>1</s>     | <s>Andrew</s> | <s>3</s>         | <s>1</s>         | <s>Andrew</s> | <s>3</s>     |
