@@ -1032,7 +1032,7 @@ select customer_id, sum(amount) as "Total Spent"
 from payment
 group by customer_id
 having sum(amount) > 150
--- using "Total Spent" in the having clause returns an error because "Total Spen" does not exist (alias gets assigned at the very end)
+-- using "Total Spent" in the having clause returns an error because "Total Spent" does not exist (alias gets assigned at the very end)
 ```
 
 Note: column aliases are for better readability of the output, whereas table aliases are for better readability and structuring of the query.
